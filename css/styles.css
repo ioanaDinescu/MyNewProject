@@ -1,0 +1,131 @@
+body{background-color:#477b65;}
+.container{
+padding:5px 100px;
+}
+.content{padding:20px 100px;}
+.content .row{margin-bottom:20px;}
+.top-up{
+background-color: #840123;
+color:white;
+}
+.top-up li{display: inline-block;
+margin-left: 20px;
+padding: 0;}
+.top-up .col-md-9 img{width: 40px;
+height:40px;}
+.top-up .col-md-3 {margin-top:0px;}
+.top-down{background-color: #eec1a4;
+}
+.top-down ul{text-align: center;
+margin:0;
+padding:10px;
+}
+.top-down li{display: inline-block;
+text-decoration: none;
+font-size: 20px;
+margin-left:20px;
+}
+.top-down li a{color:white;}
+.middle {background-color: #f6f0e2;
+padding: 30px;
+border-radius:20px;
+margin-top:20px;
+margin-bottom:20px;}
+.middle #pepsi, #milka, #ac{filter:opacity(100%);}
+.middle #p{filter: opacity(100%);
+	width: 50%;
+height:50%;
+margin:40px 150px;
+}
+
+.middle #display h2{font-family: Forte, Calibri, Arial;
+font-size:450%;}
+.middle #submit_form, #send_code{
+	width: 150px;
+	color:white;
+background-color: black;
+border-radius: 20px;
+border:none;
+padding:10px;
+margin-top:20px;}
+.middle #submit {	width: 150px;
+	color:white;
+background-color: black;
+border-radius: 20px;
+border:none;
+padding:10px;
+margin:10px 300px;}
+.bottom{background-color: #840123;
+color: white;}
+.content img{ width: 200px;
+height: 250px;
+filter: opacity(50%);
+border-radius:20px;}
+.content img:hover{ width: 200px;
+height: 250px;
+filter: opacity(100%);}
+.button {
+  background-color: #eec1a4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+input,
+textarea {
+	width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 9px 20px 9px 40px;
+}
+label {
+	 padding: 10px 0px;
+	 font-size: 16px;
+}
+
+hr {
+	background-color: #ccc;
+	height: 2.5px;
+}
+
+
+/*
+#840123
+#eec1a4
+#f6f0e2
+#477b65
+#40430d
+*/

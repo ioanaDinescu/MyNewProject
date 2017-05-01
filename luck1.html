@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Luck</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
+    <header>
+    		<div class="top-up">
+    			<div class="container">
+    				<div class="row">
+    					<div class="col-md-9">
+    					<ul>
+    						<li><img class="img-responsive" src="images/logo.png" alt="no logo"/></li>
+    						<li><h1></h1></li>
+    					</div>
+    					<div class="col-md-3">
+    						<ul>
+    							<li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="no img" /></a></li>
+    							<li><a href="https://twitter.com/"><img src="images/twitter.png" alt="no img" /></a></li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="top-down">
+    			<div class="container">
+            <nav>
+              <ul>
+                <li><button class="button"><span><a href="Home.html">Home </span></a></button></li>
+    						<li><button class="button"><span><a href="Contact.html">Contact us!</span></a></button></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    	</header>
+
+<section>
+<div class="container content">
+  <div class="middle">
+      <div class="row">
+          <div class="col-md-6">
+              <form onsubmit="return validateForm()" action="win1.html" method="post">
+                  <h2>Contact information</h2> <hr>
+                  <label for="firstName" >First name</label><br>
+                  <input type="text" name="name" aria-required="true" placeholder="" id="name"><br>
+                  <label for="lastName">Last name</label><br>
+                  <input type="text" name="name" aria-required="true" placeholder="" id="lname"><br>
+                  <label for="email">Email</label><br>
+                  <input type="text" name="email" aria-required="true" placeholder="" id="email"><br>
+                  <label for="nr">Phone number</label><br>
+                  <input type="text" name="nr" aria-required="true" placeholder="" id="no"><br>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<form onsubmit="return validateForm()" action="win1.html" method="post">
+                  <h2>Address</h2> <hr>
+                  <label for="city">City</label><br>
+                  <input type="text" name="city" aria-required="true" placeholder="" id="city"><br>
+                  <label for="district">County/District</label><br>
+                  <input type="text" name="district" aria-required="true" placeholder="" id="district"><br>
+                  <label for="address">Street Address</label><br>
+                  <input type="text" name="address" aria-required="true" placeholder="eg. Petre Ispirescu Str., Nr. 10, Bl. A2, Entr. 2" id="adress"><br>
+                  <label for="zip">Zip Code</label><br>
+                  <input type="text" name="zip" aria-required="true" placeholder="" id="zip"><br>
+                </form>
+          </div>
+        </div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+			<form onsubmit="return validateForm()" action="win1.html" method="post">
+				<label for="code">Code</label><br>
+				<input type="text" name="code" aria-required="true" placeholder="" id="code"/><br></form></div>
+				<div class="col-md-4"></div>
+		</div>
+       <div class="row">
+         <div class="col-md-4"></div>
+         <div class="col-md-4">
+             <div class="send"><input id="send_code" type="submit" value="Send the code!" onclick="check()" /></div>
+        </div>
+         <div class="col-md-4"></div>
+       </div>
+  </div>
+</div>
+</section>
+
+
+
+<footer>
+		<div class="bottom">
+			<div class="container">
+					<div class="row">
+					<div class="col-md-9">
+						<p>If you are a company interested in our platform, don't hesitate to contact us at:</p>
+					</div>
+					<div class="col-md-3">
+						<p class="text-right">Phone:+40700112233</p>
+						<p class="text-right">Email:i-t_projects@gmail.com</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center">Copyright I-T Projects</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script>
+function check()
+{ var code=document.getElementById('code').value;
+if(code.startsWith('P')==false)
+{alert("Invalid code! Try again!");
+window.location.reload();}
+else window.location.assign("win1.html");
+}
+function validateForm() {
+        var name = document.getElementById('name').value,
+        	lname = document.getElementById('lname').value,
+			email = document.getElementById('email').value,
+        	no = document.getElementById('no').value,
+        	 city= document.getElementById('city').value,
+			 district = document.getElementById('district').value,
+        	address = document.getElementById('address').value,
+        	zip = document.getElementById('zip').value,
+			code=document.getElementById('code').value,
+        	error = 0;
+
+        if (name.length < 0) {
+        	alert('Invalid name');
+            error = 1;
+        }
+
+       if (lname.length < 0) {
+        	alert('Invalid name');
+            error = 1;
+        }	
+
+       if (email.length < 0) {
+        	alert('Invalid email');
+            error = 1;
+        }
+		if (no.length!=10) {
+        	alert('Invalid phone number');
+            error = 1;
+        }
+		if (city.length < 0) {
+        	alert('Invalid city');
+            error = 1;
+        }
+		if (district.length < 0) {
+        	alert('Invalid country/district');
+            error = 1;
+        }
+		if (address.length <0) {
+        	alert('Invalid adress');
+            error = 1;
+        }
+		if (zip.length!=6) {
+        	alert('Invalid zip');
+            error = 1;
+        }
+		if (code.length!=10) {
+        	alert('Invalid name');
+            error = 1;
+        }
+
+        if (error == 0) {
+        	return true
+        }
+
+        return false;
+    }
+	function check()
+{ var code=document.getElementById('code').value;
+if(code.startsWith('P')==false)
+{alert("Invalid code! Try again!");
+window.location.reload();}
+else window.location.assign("win1.html");
+}
+</script>
+  </body>
+</html>

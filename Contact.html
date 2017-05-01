@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<header>
+	
+		<div class="top-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+					<ul>
+						<li><img class="img-responsive" src="images/logo.png" alt="no logo"/></li>
+						<li><h1>Name</h1></li>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li><a target="_blank" href="https://www.facebook.com/"><img src="images/facebook.png" alt="no img" /></a></li>
+							<li><a target="_blank" href="https://twitter.com/"><img src="images/twitter.png" alt="no img" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-down">
+			<div class="container">
+				<nav>	
+					<ul>
+						<li><button class="button"><span><a href="Home.html">Home </span></a></button></li>
+						<li><button class="button"><span><a href="#">Contact us!</span></a></button></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+	<div class="container">
+		<div class="middle">
+			
+				<h1> Got a burning question you want answered? Let's keep in touch!</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+							<p><label for="name">Full Name</label></p>
+							<p>	<input type="text" id="name" /></p>
+							<p><label for="email">Email</label></p>
+							<p>	<input type="text" id="email" /></p>
+							<p><label for="sub">Subject</label></p>
+							<input type="text" name="subject" /><br>
+							<p><label for="mess">Message</label></p>
+
+							<p><textarea name="text" cols="30" rows="10"></textarea></p>
+							<input type="hidden" name="access_token" value="yl564to1c08hmjv171y9djxp" />  
+							<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+							<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+							  <input id="submit_form" type="submit" value="Send" />
+							<p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+						</form>
+					</div>
+					<div class="col-md-6" id="image">
+						<a target="_blank" href="https://www.google.ro/maps/place/Splaiul+Independen%C8%9Bei+313,+Bucure%C8%99ti/data=!4m2!3m1!1s0x40b2019431db21d5:0xda149b5c0af7018a?sa=X&ved=0ahUKEwjD5-f50qbTAhVIVhQKHRgEDpYQ8gEIKTAB"><img class="img-responsive img-thumbnail"  src="images/location.png" alt="no img"  /></a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<footer>
+		<div class="bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<p>If you are a company interested in our platform, don't hesitate to contact us at:</p>
+					</div>
+					<div class="col-md-3">
+						<p class="text-right">Phone:+40700112233</p>
+						<p class="text-right">Email:i-t_projects@gmail.com</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center">Copyright I-T Projects</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
